@@ -19,7 +19,7 @@ $( document ).ready(function(){
 
     //Reseting the game
     function reset() {
-        random = Math.floor(Math.random().numberArray.length);
+        random = Math.floor(Math.random() *120+30)
         console.log(random)
         $('#number-to-guess').text(random);
         choice1 = Math.floor(Math.random() * 10 + 1 )
@@ -56,6 +56,7 @@ $( document ).ready(function(){
             }
             else if ( score >= random){
               loser();
+              
             
             }  
         })
