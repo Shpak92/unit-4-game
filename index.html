@@ -5,17 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     `<link rel="stylesheet" type="text/css" href="assets/CSS/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
     
-    
-    <title>cartoon Collector</title>
+<title>cartoon Collector</title>
 </head>
 <body>
-<header>
-    <h2> Can you catch em all!</h2>
+
+    <header id>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 style = "text-align: center">Cartoon Catcher</h1>
+          <p style = "text-align: center">Each 90's cartoon represents a different number!</p>
+          <p style = "text-align: center">Hit the number below to win!</p>
+        <p style = "text-align: center">Points needed to win: <span id="number-to-guess"></span>  </p>
+        </div>
+      </div>
 </header>
      
 <div class = "container">
-        <p>Each 90's cartoon represents a different number! Reach this amount of points: <span id="number-to-guess"></span>. </p>
          <div id = "photos">
             <button id = "ren"><img class="cartoons" src = "assets/photo/Ren_Stimpy.png", width = 200px, length = 200px></button>
             <button id ="thornberrys"><img class="cartoons" src = "assets/photo/Wildthornberrys.png", width = 200px, length = 200px></button>
